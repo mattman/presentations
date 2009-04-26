@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  /* Tables still need 'cellspacing="0"' in the markup.
+  border-collapse: separate; */
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/* whoever thought blue linked image borders were a good idea? */
+a img,
+:link img,
+:visited img {
+  border: none;
+}
+
+hr {
+  display: none;
+}
+
+/* no list-markers by default, since lists are used more often for semantics */
+ul, ol {
+  list-style: none;
+}
+
+/* link underlines tend to make hypertext less readable, 
+   because underlines obscure the shapes of the lower halves of words */
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+}
+
+html>body {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5; /* unitless for proper inheritance */
+  font-family: "Myriad Pro", MyriadPro, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+strong, th, thead td, h1, h2, h3, h4, h5, h6, dt { font-weight: bold; }
+
+h1 { font-size: 2.4em; line-height: 1; margin-bottom: .5em; }
+h2 { font-size: 2em; margin-bottom: .75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; margin-bottom: 1.5em; }
+h6 { font-size: 1em; }
+
+p, address, pre { margin: 0 0 1.5em; }
+code, pre { font-family: monaco, "Lucida Console", courier, mono-space; color: #c33; }
+
+em, cite, dfn { font-style: italic; }
+big { font-size: 1.3em; }
+
+abbr, acronym { color: #666; text-transform: uppercase; letter-spacing: .1em; font-size: .9em; }
+abbr { border-bottom: 1px dotted #999; }
+a abbr, a acronym { border: none; } /* no border when href */
+
+caption, th { text-align: left; }
+
+textarea { font-family: "Lucida Grande", verdana, arial, serif; }
+
+/* rails_template */
+body {
+  background: rgba(220,220,220,0.3);
+}
+
+#page {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+  padding: 1.5em 30px;
+}
+
+#content {
+}
+
+#content .container {
+  background-color: #fff;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0 .4em .4em #ddd;
+  -moz-box-shadow: 0 .4em .4em #ddd;
+}
+
+#content .container-inner {
+    min-height: 20em;
+}
+
+#header,
+#footer {
+	font-size: .88em;
+}
+
+#nav {
+  clear: both;
+}
+
+#logo,
+#user-info {
+  float: right;
+}
+
+p.breadcrumbs {
+  padding: 30px;
+  margin: 0 -30px;
+  background-color: #f9f9f9;
+  font-size: .88em;
+}
+
+#header .container {
+  padding: 2em 0 0;
+  width: 960px;
+}
+
+#primary {
+  color: #111;
+  float: left;
+  padding: 0 0 1em;
+  width: 66%;
+}
+
+#secondary {
+  color: #444;
+  float: right;
+  padding: 0 0 1em;
+  width: 23%;
+}
+
+#tertiary {
+  clear: both;
+  padding: 2em 0;
+	font-size: .75em;
+	line-height: 1.8em;
+}
+
+.navtools {
+  clear: both;
+  margin: 0 auto;
+  max-width: 60em;
+  min-width: 46em;
+}
+
+/*  basic hrefs */
+a,
+a:visited {
+  color: #07b;
+}
+
+a:hover {
+  color: #00f;
+
+}
+
+a:active {
+  outline: none;
+}
+
+/*  skiplinks */
+#skiplinks {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#skiplinks li {
+  float: left;
+  list-style-type: none;
+  padding: 0 0 0 1em;
+}
+
+/*  user-info */
+#user-info {
+}
+
+/* footer and header links and paragraphs */
+#user-info a,
+#footer a {
+  color: #6b6b6b;
+}
+
+#user-info a:hover,
+#footer a:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+
+#user-info p,
+#footer p {
+  color: #9e9e9e;
+  padding: 0;
+  margin: 0;
+}
+
+#user-info strong {
+  color: #333;
+}
+
+#header h1 {
+  font-size: 1.6em;
+  float: left;
+}
+
+/*  #secondary */
+#secondary p,
+#secondary ul,
+#secondary ol,
+#secondary dl {
+  font-size: .88em;
+}
+
+#footer p {
+  float: left;
+}
+
+#footer p.right {
+  float: right;
+}
+
+.details dl {
+  padding: 18px 0;
+}
+
+.details dt {
+  float: left;
+  clear: left;
+  width: 12em;
+  padding: .5em 0;
+  text-align: right;
+  color: #aaa;
+  border-top: 1px solid #eee;
+}
+
+.details dd {
+  clear: right;
+  padding: .5em 0 .5em .5em;
+  margin-left: 12em;
+  border-top: 1px solid #eee;
+  color: #000;
+}
+
+.details dt:first-child {
+  border: 0;
+}
+
+.details dt:first-child+dd {
+  border: 0;
+}
+
+/* loginform */
+#loginform {
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: left;
+}
+
+#loginform legend {
+  display: none;
+}
+
+#loginform label {
+  float: left;
+  margin: 0 18px 0 40px;
+  width: 200px;
+}
+
+#loginform fieldset input {
+  font-weight: bold;
+  margin-top: 3px;
+  float: left;
+  width: 200px;
+}
+
+#loginform p.button {
+  float: left;
+  display: inline;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+/* resizable button */
+#content .cmbtn a em {
+  color: #06f;
+}
+
+#content .cmbtn a:hover em {
+  color: #00f;
+}
+
+/* percentage bar */
+.bar {
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: #eee;
+}
+
+.bar .bar {
+  width: auto;
+  background: #aaa;
+}
+
+#content {
+  background-color: #fff !important;
+  max-width: 50em;
+  min-width: 30em;
+  padding: 1em 1em 0;
+  margin: 5em;
+  -webkit-box-shadow: 0 .4em .4em #ddd;
+  -moz-box-shadow: 0 .4em .4em #ddd;
+}
+
+form fieldset.login legend {
+  text-indent: -999em;
+}
+
+fieldset.login p.buttons {
+  background-color: #f9f9f9;
+  padding: 1em;
+  margin: 1em -1em 0;
+}
+
+/* clearing floats */
+#header:after,
+#nav ul:after,
+#skiplinks:after,
+#content:after,
+p.pagination:after,
+#title:after,
+.twocols:after,
+.threecols:after,
+#footer:after,
+p.breadcrumbs:after,
+.container-inner:after,
+.container:after,
+.navtools:after,
+fieldset ul:after,
+.radio ul:after,
+ul.tabs:after,
+.cmbtn:after,
+.details dl:after {
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
