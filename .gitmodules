@@ -1,0 +1,3 @@
+[submodule "coderdojo-session1-wk3/font/league-gothic"]
+	path = coderdojo-session1-wk3/font/league-gothic
+	url = https://github.com/theleagueof/league-gothic.git
